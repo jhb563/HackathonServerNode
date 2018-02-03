@@ -8,8 +8,8 @@ app.get('/api/hello', function(req, res) {
   res.send('Hello');
 });
 
-app.post('/api/sms', function(req, res) {
-  console.log(req.body); 
+app.post('/api/sms/', function(req, res) {
+  console.log(req);
   res.send('Bye');
 });
 

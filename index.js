@@ -11,7 +11,7 @@ app.get('/api/hello', function(req, res) {
 app.post('/api/sms', function(req, res) {
   console.log(req); 
   res.send('Bye');
-)};
+});
 
 app.listen(PORT, function() {
   console.log('Hackathon App listening');

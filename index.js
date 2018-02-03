@@ -9,7 +9,7 @@ app.get('/api/hello', function(req, res) {
 });
 
 app.post('/api/sms', function(req, res) {
-  console.log(req); 
+  console.log(req.body); 
   res.send('Bye');
 });
 

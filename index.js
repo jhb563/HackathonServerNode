@@ -4,9 +4,14 @@ const PORT = process.env.PORT || 5000
 
 var app = express()
 
-app.get('/', function(req, res) {
+app.get('/api/hello', function(req, res) {
   res.send('Hello');
 });
+
+app.post('/api/sms', function(req, res) {
+  console.log(req); 
+  res.send('Bye');
+)};
 
 app.listen(PORT, function() {
   console.log('Hackathon App listening');
